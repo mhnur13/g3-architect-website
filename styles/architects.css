@@ -8,3 +8,229 @@
   font-weight: 400;
   font-style: normal;
 }
+
+
+.header-main{
+   
+    max-width: 1453px;
+    margin: auto;
+     background-color: rgba(255, 144, 14, 0.1);
+     
+}
+
+
+
+
+/* color */
+.text-gray{
+    color: #A1A1A1;
+}
+
+.text-orange{
+    color: #FF900E ;
+}
+
+
+
+.navbar{
+   
+    
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+   
+     
+}
+
+
+.Brand{
+    font-weight: 700px;
+    font-size: 3rem;
+}
+
+.nav-link{
+    display: flex;
+    gap: 30px;
+   text-decoration: none;
+   
+  
+}
+
+
+.nav-item{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.banner{
+   
+    
+}
+
+.banner-content{
+    max-width: 862px;
+   margin: auto;
+   text-align: center;
+
+}
+.banner-title{
+    font-weight: bold;
+    font-size: 64px;
+    
+}
+
+.btn-primary{
+    width: 180px;
+    height: 64px;
+    font-size: 20px;
+    color: aliceblue;
+    background-color: rgba(255, 144, 14, 1);
+    margin-top: 20px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    border: none;
+}
+.banner-img{
+    width: 100%;
+}
+
+
+
+/* team section statrt here */
+
+.team-section{
+    
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    gap: 55px;
+   
+    
+}
+
+
+.team-img{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 24px;
+}
+
+
+
+.our-feature{
+ 
+ max-width: 537px;
+ margin: auto;
+}
+
+.feature-title{
+    font-size: 50px;
+}
+
+
+
+/* Feature will enjoy section */
+
+
+.Features{
+    border:  4px solid red;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 120px;
+    display: flex;
+    gap: 122px;
+}
+
+#border-left{
+    border-left: 5px solid #FF900E;
+     
+}
+
+.feature-title{
+    padding-left: 30px;
+   
+
+}
+
+.feature-description{
+    color: #A1A1A1;
+    
+}
+
+
+.card-div{
+    /* border: 3px solid blue; */
+    margin-top: 22px;
+    width: 586px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+   background: rgba(255, 255, 255, 1);
+   padding-top: 23px;
+   padding-left: 25px;
+}
+
+.card-description{
+    color: #A1A1A1;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive media query */
+@media screen and (max-width:576px){
+    .navbar, .nav-link, .team-img, .team-section{
+       flex-direction: column;
+      
+
+    }
+
+    .team-img{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+.Architect-img{
+    grid-template-columns: repeat(1,1fr);
+}
+
+    .our-feature{
+        
+        text-align: center;
+        margin: 25px;
+
+    }
+
+   
+    
+}
+
+
+/* medium size device  */
+@media  screen and (min-width: 576px) and (max-width: 992px)  { 
+    .team-section {
+        flex-direction: column;
+    }
+    .our-feature{
+        text-align: center;
+    }
+}
+
+
+
