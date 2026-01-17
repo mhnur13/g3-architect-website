@@ -19,11 +19,18 @@
 }
 
 
+/* Shared color */
 
 
 /* color */
 .text-gray{
     color: #A1A1A1;
+    filter: grayscale(100%);
+}
+
+.text-black{
+    color: black;
+    filter: brightness(0);
 }
 
 .text-orange{
@@ -248,7 +255,55 @@
 
 
 
+/* Our-Sponspors Section start here */
 
+.Our-Spons{
+    
+    
+    max-width:1400px;;
+    margin: auto;
+    margin-top: 150px;
+
+}
+
+.Sponspors-child-one{
+    text-align: center;
+}
+
+.sponsors-title{
+    font-size: 40px;
+}
+
+.sponsors-description{
+    color: #A1A1A1;
+}
+
+
+ /* understanding part for me */
+
+.Sponspors-img{
+   display: grid;
+   grid-template-columns: repeat(5,1fr);
+   margin-top: 30px;
+    
+}
+
+
+/* Fopoter section start here */
+
+
+.Footer{
+    
+    max-width:1400px;;
+    height: 50px;
+    margin: auto;
+    margin-top: 150px;
+   
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+    background-color: #FFF4E7;
+}
 
 
 
@@ -273,6 +328,12 @@
     grid-template-columns: repeat(1,1fr);
 }
 
+.Sponspors-img{
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    gap: 30px;
+}
+
 
 
 
@@ -293,7 +354,7 @@
 
     #Experience-badge{
         margin-top: 20px;
-       margin-left: 30px;
+       margin-left: 10px;
        
     }
 
@@ -329,8 +390,10 @@
     }
 
     #Experience-badge{
-        margin-top: 20px;
-        margin-left: 20px;
+        margin-top: 50px;
+        margin-left: 266px;
+        
+        
     }
 
     .Icon-Parent-div{
@@ -340,6 +403,14 @@
 
     .Some-fact{
         text-align: center;
+    }
+
+    .Sponspors-img{
+        grid-template-columns: repeat( 2, 1fr);
+        justify-items: center;
+        gap: 30px;
+        margin-top: 80px;
+        
     }
 }
 
