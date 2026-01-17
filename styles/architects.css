@@ -137,11 +137,12 @@
 
 
 .Features{
-    border:  4px solid red;
-    max-width: 1440px;
+    
+    max-width:1400px;;
     margin: auto;
-    margin-top: 120px;
+    margin-top: 150px;
     display: flex;
+    flex-direction: row;
     gap: 122px;
 }
 
@@ -161,17 +162,36 @@
     
 }
 
+.img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+#Experience-badge{
+  width: 342px;
+  height: 200px;
+  margin-left: -90px;
+  margin-top: -120px;
+}
+
+#Experience-Year{
+ font-size: 50px;
+ font-weight: bolder;
+}
+
 
 .card-div{
     /* border: 3px solid blue; */
     margin-top: 22px;
-    width: 586px;
+    max-width: 586px;
     height: 150px;
     border-radius: 8px;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
    background: rgba(255, 255, 255, 1);
-   padding-top: 23px;
-   padding-left: 25px;
+   padding: 30px;
 }
 
 .card-description{
@@ -181,12 +201,50 @@
 
 
 
+ /* some fect section start Here  */
+
+ .Icon-section{
+    
+    max-width:1400px;;
+    margin: auto;
+    margin-top: 130px;
+
+
+ }
+
+ .Icon-Title{
+    font-size: 35px;
+ }
+
+.Icon-Description{
+    color: #A1A1A1;
+}
+
+.Icon-Parent-div{
+    display: flex;
+    gap: 120px;
+}
 
 
 
+.Icon-div{
+   border: 1px solid #FF900E;
+    height: 240px;
+    width: 240px;
+    text-align: center;
+    margin-top: 60px;
+    border-radius: 8px;
 
+    
+}
 
+.Icon-img{
+    padding-top: 50px;
+}
 
+.Icon-Awards{
+    color: #A1A1A1;
+}
 
 
 
@@ -196,11 +254,16 @@
 
 /* responsive media query */
 @media screen and (max-width:576px){
-    .navbar, .nav-link, .team-img, .team-section{
+    .navbar, .nav-link, .team-img, 
+    .team-section,
+    .Features,
+    .Icon-Parent-div{
        flex-direction: column;
       
 
     }
+   
+
 
     .team-img{
         grid-template-columns: repeat(1,1fr);
@@ -210,6 +273,17 @@
     grid-template-columns: repeat(1,1fr);
 }
 
+
+
+
+.Features{
+    margin-top: -50px;
+}
+
+.feature-description{
+    text-align: start;
+    padding-left: 15px;
+}
     .our-feature{
         
         text-align: center;
@@ -217,17 +291,54 @@
 
     }
 
+    #Experience-badge{
+        margin-top: 20px;
+       margin-left: 30px;
+       
+    }
+
+    .Icon-section{
+        margin-top: -10px;
+    }
    
+     .Icon-Parent-div{
+        padding-left: 76px;
+        gap: 10px;
+    }
+
+   .Icon-Description{
+    margin-left: 50px;
+   }
+
+   .Icon-Title{
+    margin-left: 50px;
+   }
+
+
     
 }
 
 
 /* medium size device  */
 @media  screen and (min-width: 576px) and (max-width: 992px)  { 
-    .team-section {
+    .team-section , .Features, .Icon-Parent-div{
         flex-direction: column;
     }
     .our-feature{
+        text-align: center;
+    }
+
+    #Experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .Icon-Parent-div{
+        align-items: center;
+        
+    }
+
+    .Some-fact{
         text-align: center;
     }
 }
